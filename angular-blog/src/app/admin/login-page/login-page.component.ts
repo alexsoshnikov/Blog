@@ -14,13 +14,17 @@ export class LoginPageComponent implements OnInit {
     form: FormGroup
     submitted = false
     message = ''
+    
     constructor(private auth: AuthService, private router: Router, private route: ActivatedRoute) {
     }
     
     ngOnInit() {
         this.route.queryParams.subscribe((params: Params) => {
-            if(params['loginAgain']) {
-            this.message = 'Введите данные!'
+            if (params['loginAgain']) {
+                this.message = 'Введите данные!'
+            }
+            if(params['authFailed']) {
+                this.message = 'Сессия истекла. Введите данные заново!'
             }
         })
         
