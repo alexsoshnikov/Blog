@@ -3,15 +3,18 @@ import {Routes, RouterModule, PreloadingStrategy, PreloadAllModules} from '@angu
 import {MainLayoutComponent} from "./shared/components/main-layout/main-layout.component";
 import {HomePageComponent} from "./home-page/home-page.component";
 import {PostPageComponent} from "./post-page/post-page.component";
+import {ErrorLayoutComponent} from "./shared/components/error-layout/error-layout.component";
 
 
 const routes: Routes = [
   {path: '', component: MainLayoutComponent, children: [
-      {path: '', redirectTo: '/', pathMatch: 'full'},
-      {path: '', component: HomePageComponent},
-      {path: 'post/:id', component: PostPageComponent}
-    ]},
-  {path: 'admin', loadChildren: './admin/admin.module#AdminModule'}
+            {path: '', redirectTo: '/', pathMatch: 'full'},
+            {path: '', component: HomePageComponent},
+            {path: 'post/:id', component: PostPageComponent}
+        ]},
+    {path: 'admin', loadChildren: './admin/admin.module#AdminModule'},
+    {path: 'error', component: ErrorLayoutComponent},
+    {path: '**', redirectTo: '/error'}
 ];
 
 @NgModule({
