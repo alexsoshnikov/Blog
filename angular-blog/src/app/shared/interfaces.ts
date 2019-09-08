@@ -18,6 +18,15 @@ export interface Post {
     date: Date
 }
 
-export class FbCreateResponse {
+export interface FbCreateResponse {
     name: string
+}
+
+
+export interface Comment {
+    id?: string
+    idPost: string
+    text: string
+    author: string
+    date: Date
 }

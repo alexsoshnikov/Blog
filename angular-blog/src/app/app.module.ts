@@ -15,6 +15,9 @@ import ruLocal from "@angular/common/locales/ru";
 import {ErrorLayoutComponent} from "./shared/components/error-layout/error-layout.component";
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import {SortPipe} from "./shared/sort.pipe";
+import {CommentComponent} from "./shared/components/comment/comment.component";
+import {ReactiveFormsModule} from "@angular/forms";
 
 registerLocaleData(ruLocal, 'ru')
 
@@ -32,13 +35,16 @@ const INTERCEPTOR_PROVIDER: Provider = {
         PostPageComponent,
         HomePageComponent,
         PostComponent,
-        ErrorLayoutComponent
+        ErrorLayoutComponent,
+        SortPipe,
+        CommentComponent
     ],
     imports: [
         BrowserModule,
         AppRoutingModule,
         SharedModule,
-        ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+        ServiceWorkerModule.register('ngsw-worker.js', {enabled: environment.production}),
+        ReactiveFormsModule
     ],
     providers: [INTERCEPTOR_PROVIDER],
     bootstrap: [AppComponent]

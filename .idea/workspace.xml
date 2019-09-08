@@ -15,7 +15,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Desktop/Учебники/Прога/JS/28" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
@@ -25,9 +25,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\alexs\OneDrive\Документы\GitHub\Blog\angular-blog\src\assets" />
       <recent name="C:\Users\alexs\OneDrive\Документы\GitHub\Blog\angular-blog\src" />
       <recent name="C:\Users\alexs\OneDrive\Документы\GitHub\Blog\angular-blog\src\app\shared" />
-      <recent name="C:\Users\alexs\OneDrive\Документы\GitHub\Blog\angular-blog\src\assets" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -42,8 +42,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
+  <component name="RunManager" selected="npm.start">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Blog/angular-blog/dist/angular-blog/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/angular-blog/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -58,8 +68,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.build" />
+        <item itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
   </component>
@@ -76,7 +87,11 @@
       <workItem from="1566481284241" duration="7482000" />
       <workItem from="1566547271558" duration="16467000" />
       <workItem from="1566666107544" duration="12106000" />
-      <workItem from="1566731075494" duration="8091000" />
+      <workItem from="1566731075494" duration="8136000" />
+      <workItem from="1566748822850" duration="1206000" />
+      <workItem from="1567325160797" duration="1483000" />
+      <workItem from="1567336525254" duration="15162000" />
+      <workItem from="1567955050705" duration="7430000" />
     </task>
     <servers />
   </component>
